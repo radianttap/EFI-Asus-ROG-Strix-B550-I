@@ -223,7 +223,7 @@
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
-				<string>V1.6.3 | Patch engine</string>
+				<string>V1.6.2 | Patch engine</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -241,7 +241,7 @@
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string>V1.3.1 | SMC emulator</string>
+				<string>V1.3.0 | SMC emulator</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -277,7 +277,7 @@
 				<key>BundlePath</key>
 				<string>AMDRyzenCPUPowerManagement.kext</string>
 				<key>Comment</key>
-				<string>V0.7.1 | AMD Ryzen CPU Power Management</string>
+				<string>V0.7 | AMD Ryzen CPU Power Management</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -313,7 +313,7 @@
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string>V1.6.2 | GPU patching</string>
+				<string>V1.6.1 | GPU patching</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -331,7 +331,7 @@
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>V1.7.6 | Audio patches</string>
+				<string>V1.7.4 | Audio patches</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -385,7 +385,7 @@
 				<key>BundlePath</key>
 				<string>RestrictEvents.kext</string>
 				<key>Comment</key>
-				<string>V1.0.9 | CPU name patch</string>
+				<string>V1.0.8 | CPU name patch</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -502,7 +502,7 @@
 				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>
-				uAAAAAAA
+				uAwAAAAA
 				</data>
 				<key>ReplaceMask</key>
 				<data>
@@ -540,7 +540,7 @@
 				<string>19.0.0</string>
 				<key>Replace</key>
 				<data>
-				ugAAAAAA
+				ugwAAAAA
 				</data>
 				<key>ReplaceMask</key>
 				<data>
@@ -578,7 +578,7 @@
 				<string>21.0.0</string>
 				<key>Replace</key>
 				<data>
-				ugAAAACQ
+				ugwAAACQ
 				</data>
 				<key>ReplaceMask</key>
 				<data>
@@ -1208,7 +1208,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>67</integer>
 		</dict>
 		<key>Entries</key>
 		<array/>
@@ -1321,6 +1321,26 @@
 				<key>TextMode</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>CleanNvram.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>CleanNvram.efi</string>
+				<key>Path</key>
+				<string>CleanNvram.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>NVRAM</key>
@@ -1344,7 +1364,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 agdpmod=pikera e1000=0 alcid=13</string>
+				<string>-v debug=0x100 keepsyms=1 agdpmod=pikera e1000=0 alcid=13</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==
