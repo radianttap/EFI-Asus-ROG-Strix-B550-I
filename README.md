@@ -1,8 +1,10 @@
 # Asus ROG Strix B550-I + Ryzen 9 5900X + RX 6800
 
-- OpenCore ver 0.8.3
+- OpenCore ver 0.8.4
 - MacPro7,1
-- Monterey 12.5
+- Monterey 12.6
+
+Work in progress, can’t get Installer past grey screen after choosing language. Mouse can be moved, but nothing happens.
 
 ## Current hardware
 
@@ -20,40 +22,19 @@ Powerful and near-silent even under full CPU load.
 
 ### BIOS
 
-Version F12
+Version 2803
 
 - Fast Boot: `Disabled`
 - CSM: `Disabled`
 - Above 4G Decoding: `Enabled`
 - Resizable Bar Support: `Enabled`
-- PCIe slot speed: `Auto`
-- XMP Profile activated
+- PCIe slot speed: `Gen3`
+- XMP Profile activated (D.O.C.P.)
 
 ## Usage
 
 1. [Update `PlatformInfo/Generic` stuff](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) with your own, inside `config.plist`
 2. Use your Ethernet’s MAC address for `ROM` value, as explained in the Dortania guide. Don’t leave it as all 0s.
-3. Update value of `brcmfx-country` argument in `NVRAM/7C436110-AB2A-4BBB-A880-FE41995C9F82/boot-args` with your country code. Should be identical or compatible with what your WiFi router is broadcasting. (Remove the parameter if you don’t know what I’m talking about here.)
-4. Turn off Power Nap in Energy Saver.
-
-### What’s working
-
-Everything.
-
-- CPU Power Management.
-- NVMe SSD.
-- WiFi, Bluetooth, Ethernet.
-- All USB ports (without map, just with RHUB reset).
-- Radeon GPU is natively supported.
-- 4K HDMI or DisplayPort with HDR.
-- Watch unlock, Handoff, iMessage, iCloud, Keychain, Xcode etc.
-- System Integrity Protection (SIP) fully enabled.
-- Sleep / Wake.
-- All media & DRM
-
-### What’s not working
-
-Sidecar most likely. Did not even try it but I suspect it does not work.
 
 ## Notes
 
