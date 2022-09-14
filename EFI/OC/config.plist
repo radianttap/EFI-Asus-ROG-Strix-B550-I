@@ -34,7 +34,7 @@
                     <key>Comment</key>
                     <string>SMBus fixer</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Path</key>
                     <string>SSDT-SBUS-MCHC.aml</string>
                 </dict>
@@ -277,7 +277,7 @@
                     <key>Comment</key>
                     <string>V0.7 | AMD Ryzen CPU Power Management</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AMDRyzenCPUPowerManagement</string>
                     <key>MaxKernel</key>
@@ -295,7 +295,7 @@
                     <key>Comment</key>
                     <string>V1 | AMD CPU monitoring</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SMCAMDProcessor</string>
                     <key>MaxKernel</key>
@@ -349,7 +349,7 @@
                     <key>Comment</key>
                     <string>V0.3.1 | Radeon GPU sensor readout</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/RadeonSensor</string>
                     <key>MaxKernel</key>
@@ -367,7 +367,7 @@
                     <key>Comment</key>
                     <string>V0.3.1 | RadeonSensor compatibility layer for VirtualSMC</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SMCRadeonGPU</string>
                     <key>MaxKernel</key>
@@ -421,7 +421,7 @@
                     <key>Comment</key>
                     <string>V2.2.0</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IntelBTPatcher</string>
                     <key>MaxKernel</key>
@@ -439,7 +439,7 @@
                     <key>Comment</key>
                     <string>V2.3.0</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IntelBluetoothFirmware</string>
                     <key>MaxKernel</key>
@@ -457,7 +457,7 @@
                     <key>Comment</key>
                     <string>V2.6.3</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BlueToolFixup</string>
                     <key>MaxKernel</key>
