@@ -344,7 +344,7 @@
                     <key>Comment</key>
 				<string>V1.1.1 | USB toolbox</string>
                     <key>Enabled</key>
-				<false/>
+				<true/>
                     <key>ExecutablePath</key>
 				<string>Contents/MacOS/USBToolBox</string>
                     <key>MaxKernel</key>
@@ -360,9 +360,9 @@
                     <key>BundlePath</key>
 				<string>UTBMap.kext</string>
                     <key>Comment</key>
-				<string>USB map ROG Strix B550I</string>
+				<string>ROG Strix B550-I (no case ports)</string>
                     <key>Enabled</key>
-				<false/>
+				<true/>
                     <key>ExecutablePath</key>
 				<string></string>
                     <key>MaxKernel</key>
