@@ -1259,7 +1259,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
 		<array/>
@@ -1421,7 +1421,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 agdpmod=pikera e1000=0 alcid=3</string>
+				<string>keepsyms=1 agdpmod=pikera e1000=0 alcid=3</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==
