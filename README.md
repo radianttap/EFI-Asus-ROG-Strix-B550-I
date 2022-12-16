@@ -34,6 +34,10 @@ Version 2803
 1. [Update `PlatformInfo/Generic` stuff](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) with your own, inside `config.plist`
 2. Use your Ethernet’s MAC address for `ROM` value, as explained in the Dortania guide. Don’t leave it as all 0s.
 
+## Status
+
+*Everything* works except the usual AMD caveats.
+
 ## Notes
 
 *Use at your own risk.* Nothing is guaranteed, even if you use exactly the same hardware as me.
