@@ -1,4 +1,4 @@
-# Asus ROG Strix B550-I + Ryzen 7 5700X + RX 6800
+# Asus ROG Strix B550-I + Ryzen 5x00 + Radeon 6x00
 
 - OpenCore ver 0.8.7
 - MacPro7,1
@@ -12,11 +12,11 @@
 - Corsair [Vengeance LPX](https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK32GX4M2D3200C16) 32 GB (2 x 16 GB) DDR4 3200MHz CL16
 - WD [Black SN850X](https://www.westerndigital.com/en-il/products/internal-drives/wd-black-sn850x-nvme-ssd#WDS200T2X0E) 2TB NVMe SSD
 - WD [Black SN770](https://www.westerndigital.com/en-il/products/internal-drives/wd-black-sn770-nvme-ssd#WDS100T3X0E) 1TB NVMe SSD
-- Corsair [SF600 Platinum](https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/Power-Supply-Units-Advanced/SF-Series/p/CP-9020182-NA) SFX PSU
-- Noctua [NF-L12 Ghost S1](https://noctua.at/en/nh-l12-ghost-s1-edition) CPU cooler
-- Louqe [Ghost S1 Mk3](https://www.louqe.com/portfolio/ghost-s1/) case
+- [Broadcom BCM94360NG](https://www.aliexpress.com/item/1005003324812245.html) card, direct replacement for the existing card on the board.
 
 Note: it’s fairly easy to switch between Ryzen 5000 CPUs, just carefully update the `Replace` value in first 3 `Kernel/Patch` entries, as [per AMD OSX Vanilla repo](https://github.com/AMD-OSX/AMD_Vanilla).
+
+You can use any of these cards: Radeon 6600 XT, 6800, 6800 XT, 6900 XT — all are natively supported.
 
 ### BIOS
 
