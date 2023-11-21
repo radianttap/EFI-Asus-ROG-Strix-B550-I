@@ -1,8 +1,8 @@
-# Asus ROG Strix B550-I + Ryzen 5x00 + Radeon 6x00
+# Asus ROG Strix B550-I · Ryzen 5x00 · Radeon 6x00
 
-- OpenCore ver 0.8.7
+- OpenCore ver 0.9.6
 - MacPro7,1
-- Monterey 12.6.2
+- Sonoma 14.1.1
 
 ## Current hardware
 
@@ -12,11 +12,11 @@
 - Corsair [Vengeance LPX](https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK32GX4M2D3200C16) 32 GB (2 x 16 GB) DDR4 3200MHz CL16
 - WD [Black SN850X](https://www.westerndigital.com/en-il/products/internal-drives/wd-black-sn850x-nvme-ssd#WDS200T2X0E) 2TB NVMe SSD
 - WD [Black SN770](https://www.westerndigital.com/en-il/products/internal-drives/wd-black-sn770-nvme-ssd#WDS100T3X0E) 1TB NVMe SSD
-- [Broadcom BCM94360NG](https://www.aliexpress.com/item/1005003324812245.html) card, direct replacement for the existing card on the board.
+- Intel AX200 Wi-Fi / Bt card is already included on the motherboard.
 
-Note: it’s fairly easy to switch between Ryzen 5000 CPUs, just carefully update the `Replace` value in first 3 `Kernel/Patch` entries, as [per AMD OSX Vanilla repo](https://github.com/AMD-OSX/AMD_Vanilla).
+Note: it’s fairly easy to switch between Ryzen 5000 CPUs, just carefully update the `Replace` value in first 4 `Kernel/Patch` entries, as [per AMD OSX Vanilla repo](https://github.com/AMD-OSX/AMD_Vanilla).
 
-You can use any of these cards: Radeon 6600 XT, 6800, 6800 XT, 6900 XT — all are natively supported.
+You can use any of these cards: Radeon 5500 XT, 5700 XT, 6600 XT, 6800, 6800 XT, 6900 XT — all are natively supported.
 
 ### BIOS
 
@@ -31,12 +31,14 @@ Version 2803
 
 ## Usage
 
-1. [Update `PlatformInfo/Generic` stuff](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) with your own, inside `config.plist`
-2. Use your Ethernet’s MAC address for `ROM` value, as explained in the Dortania guide. Don’t leave it as all 0s.
+1. [Update `PlatformInfo/Generic` stuff](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) with your own, inside `config.plist`\
+2. Use your Ethernet’s MAC address for `ROM` value, as explained in the Dortania guide.
+
+Don’t leave these settings as all zeros, iCloud and other Apple services will not work.
 
 ## Status
 
-*Everything* works except the usual AMD caveats.
+Intel Wi-Fi drivers I am using ([AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) 2.3.0 alpha) don’t support niceties like AirDrop. On the other hand, Wi-Fi speed is way, way better than with common replacements like BCM94360NG.
 
 ## Notes
 
