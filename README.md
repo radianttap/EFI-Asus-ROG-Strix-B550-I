@@ -4,6 +4,17 @@
 - MacPro7,1
 - Sonoma 14.1.1
 
+*Use at your own risk.* Nothing is guaranteed, even if you use exactly the same hardware as me.
+
+You may use this EFI as example but be prepared to dive way deeper than you hoped. It’s always advisable to build your own EFI from scratch, [following the guide](https://dortania.github.io/OpenCore-Install-Guide/) —  then you’ll have an idea how things work and how to ask for help in proper channels:
+- [Discord server](https://discord.gg/Wxam8aH)
+- AMD-OSX [forums](https://forum.amd-osx.com)
+
+Most importantly — doing stuff step by step will give you knowledge how to act on given help and hints.
+
+Good luck.
+
+
 ## Current hardware
 
 - Asus [ROG Strix B550-I Gaming](https://rog.asus.com/us/motherboards/rog-strix/rog-strix-b550-i-gaming-model/) motherboard
@@ -16,7 +27,7 @@
 
 Note: it’s fairly easy to switch between Ryzen 5000 CPUs, just carefully update the `Replace` value in first 4 `Kernel/Patch` entries, as [per AMD OSX Vanilla repo](https://github.com/AMD-OSX/AMD_Vanilla).
 
-You can use any of these cards: Radeon 5500 XT, 5700 XT, 6600 XT, 6800, 6800 XT, 6900 XT — all are natively supported.
+You can use any of these cards: Radeon 5500 XT, 5700 XT, 6600 XT, 6800, 6800 XT, 6900 XT — all are natively supported and none require any extra setup to do.
 
 ### BIOS
 
@@ -29,29 +40,20 @@ Version 2803
 - PCIe slot speed: `Auto`
 - XMP Profile activated (D.O.C.P.)
 
-## Usage
+### Stuff you need to do
 
-1. [Update `PlatformInfo/Generic` stuff](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) with your own, inside `config.plist`\
-2. Use your Ethernet’s MAC address for `ROM` value, as explained in the Dortania guide.
+1. Update PlatformInfo/Generic stuff with your own, inside `config.plist`. Generate [appropriate values](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) for `MLB` (also called Board Serial), `SystemSerialNumber` and `SystemUUID`.
+2. Use your Ethernet’s MAC address for `ROM` value, as [explained](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#choose-a-mac-address) in the Dortania guide.
 
 Don’t leave these settings as all zeros, iCloud and other Apple services will not work.
 
-## Status
+## Status, stability
 
-Intel Wi-Fi drivers I am using ([AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) 2.3.0 alpha) don’t support niceties like AirDrop. On the other hand, Wi-Fi speed is way, way better than with common replacements like BCM94360NG.
+Intel Wi-Fi drivers I am using ([AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) 2.3.0 alpha) don’t support niceties like AirDrop. On the other hand, Wi-Fi speed is way, way better than with common replacements like BCM94360NG thus I’m thinking the trade-off is worth it.
 
-## Notes
+Sleep is not working with the `2.3.0.alpha` version of `AirportItlwm.kext`.
 
-*Use at your own risk.* Nothing is guaranteed, even if you use exactly the same hardware as me.
-
-You may use this EFI as example but be prepared to dive way deeper than you hoped. It’s always advisable to build your own EFI from scratch, [following the guide](https://dortania.github.io/OpenCore-Install-Guide/) —  then you’ll have an idea how things work,  how to ask for help in proper channels:
-- [on Reddit](https://www.reddit.com/r/hackintosh/)
-- [Discord server](https://discord.gg/Wxam8aH)
-- AMD-OSX [forums](https://forum.amd-osx.com)
-
-Most importantly — doing stuff step by step will give you knowledge how to act on given help and hints.
-
-Good luck.
+Otherwise the build is pretty much perfect and performance is great.
 
 ## Give back
 
