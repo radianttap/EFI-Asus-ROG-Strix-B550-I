@@ -46,6 +46,14 @@
 					<key>Path</key>
 					<string>SSDT-GPRW.aml</string>
 				</dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-I225V.aml</string>
+                </dict>
 			</array>
 			<key>Delete</key>
 			<array/>
@@ -171,17 +179,6 @@
 					<string>Network controller</string>
 					<key>model</key>
 					<string>Intel AX200</string>
-				</dict>
-				<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x9,0x0)/Pci(0x0,0x0)</key>
-				<dict>
-					<key>AAPL,slot-name</key>
-					<string>Built In</string>
-					<key>built-in</key>
-					<data>AQ==</data>
-					<key>device_type</key>
-					<string>Ethernet controller</string>
-					<key>model</key>
-					<string>Intel I225-V</string>
 				</dict>
 			</dict>
 			<key>Delete</key>
@@ -1520,7 +1517,6 @@
 					<key>SystemAudioVolume</key>
 					<data>Rg==</data>
 					<key>boot-args</key>
-					<string>keepsyms=1 agdpmod=pikera e1000=0 alcid=3</string>
 					<key>csr-active-config</key>
 					<data>AAAAAA==</data>
 					<key>run-efi-updater</key>
