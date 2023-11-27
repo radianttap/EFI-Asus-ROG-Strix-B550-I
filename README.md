@@ -49,9 +49,10 @@ Don’t leave these settings as all zeros, iCloud and other Apple services will 
 
 ## Status, stability
 
-Intel Wi-Fi drivers I am using ([AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) 2.3.0 alpha) don’t support niceties like AirDrop. On the other hand, Wi-Fi speed is way, way better than with common replacements like BCM94360NG thus I’m thinking the trade-off is worth it.
-
-Sleep is not working with the `2.3.0.alpha` version of `AirportItlwm.kext`.
+- Intel Wi-Fi drivers I am using ([AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) 2.3.0 alpha) don’t support niceties like AirDrop. On the other hand, Wi-Fi speed is way, way better than with common replacements like BCM94360NG thus I’m thinking the trade-off is worth it.
+- Basic iCloud is working, file sync etc.
+- Messages / Facetime won't login, for now.
+- Sleep is not working.
 
 Otherwise the build is pretty much perfect and performance is great.
 
