@@ -1,8 +1,8 @@
 # Asus ROG Strix B550-I · Ryzen 5x00 · Radeon 6x00
 
-- OpenCore ver 0.9.6
+- OpenCore ver 0.9.8
 - MacPro7,1
-- Sonoma 14.1.1
+- Sonoma 14.3.1
 
 *Use at your own risk.* Nothing is guaranteed, even if you use exactly the same hardware as me.
 
@@ -31,7 +31,7 @@ You can use any of these cards: Radeon 5500 XT, 5700 XT, 6600 XT, 6800, 6800 XT,
 
 ### BIOS
 
-Version 2803
+Version 3402
 
 - Fast Boot: `Disabled`
 - CSM: `Disabled`
@@ -39,6 +39,8 @@ Version 2803
 - Resizable Bar Support: `Enabled`
 - PCIe slot speed: `Auto`
 - XMP Profile activated (D.O.C.P.)
+- SVM Mode: Enabled
+- IOMMU: Enabled
 
 ### Stuff you need to do
 
@@ -49,10 +51,17 @@ Don’t leave these settings as all zeros, iCloud and other Apple services will 
 
 ## Status, stability
 
-- Intel Wi-Fi drivers I am using ([AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) 2.3.0 alpha) don’t support niceties like AirDrop. On the other hand, Wi-Fi speed is way, way better than with common replacements like BCM94360NG thus I’m thinking the trade-off is worth it.
+- USB ports all mapped-out and work as expected.
+- Ethernet is working perfectly, tested with 1Gbps max which is what my router offers. IOMMU:enabled is crucial BIOS settings for AppleIGC.kext functionality.
+- Intel Bluetooth works great.
 - Basic iCloud is working, file sync etc.
-- Messages / Facetime won't login, for now.
-- Sleep is not working.
+- Messages / Facetime work over Ethernet.
+
+WiFi is tricky.
+
+- Intel Wi-Fi drivers I am using ([AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) 2.3.0 alpha) don’t support niceties like AirDrop. On the other hand, Wi-Fi speed is way, way better than with common replacements like BCM94360NG thus I’m thinking the trade-off is worth it.
+- Messages / FaceTime do not work over WiFi.
+- Sleep is not working due to WiFi drivers.
 
 Otherwise the build is pretty much perfect and performance is great.
 
