@@ -52,16 +52,21 @@ Don’t leave these settings as all zeros, iCloud and other Apple services will 
 ## Status, stability
 
 - USB ports all mapped-out and work as expected.
-- Ethernet is working perfectly, tested with 1Gbps max which is what my router offers. IOMMU:enabled is crucial BIOS settings for AppleIGC.kext functionality.
+- Ethernet is working perfectly, tested with 1Gbps max which is what my router offers. IOMMU:enabled is crucial BIOS setting for AppleIGC.kext functionality.
 - Intel Bluetooth works great.
 - Basic iCloud is working, file sync etc.
 - Messages / Facetime work over Ethernet.
 
 WiFi is tricky.
 
-- Intel Wi-Fi drivers I am using ([AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) 2.3.0 alpha) don’t support niceties like AirDrop. On the other hand, Wi-Fi speed is way, way better than with common replacements like BCM94360NG thus I’m thinking the trade-off is worth it.
+- Intel Wi-Fi drivers I am using ([AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) 2.3.0 alpha) don’t support niceties like AirDrop. On the other hand, Wi-Fi speed is way, way better than with common replacements like BCM94360NG thus I think the trade-off is worth it.
 - Messages / FaceTime do not work over WiFi.
-- Sleep is not working due to WiFi drivers.
+
+Notes:
+
+- Build uses `Airportitlwm.kext`, version `2.3.x` for Sonoma 14.3.x
+- In Sonoma 14.4 (still in beta at the moment), Apple continued to cleanup and remove legacy WiFi stack thus it needs an updated kext (incompatible with 14.3.x) which is not included here. 
+
 
 Otherwise the build is pretty much perfect and performance is great.
 
